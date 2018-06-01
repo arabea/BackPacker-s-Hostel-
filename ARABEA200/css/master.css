@@ -1,0 +1,853 @@
+/*Start Global*/
+* {
+  font-family: ubuntu;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+body {
+  background-color: #ddd;
+}
+table th{
+
+}
+table td{
+  padding-left: 30px;
+}
+ul{
+  line-height: 20px;
+}
+a:not(.not) {
+  border-bottom: dotted 0.3px;
+}
+a:hover:not(.not){
+  border-bottom: dotted 0.5px;
+}
+/*End Global*/
+
+/*--------------------------------START HOME------------------------------------------ */
+
+/*Start Header*/
+    /*Start NavBar*/
+    .navbar{
+      background: transparent;
+      position: absolute;
+      z-index: 500;
+      width: 100%;
+      color: white;
+    }
+
+
+    .navbar .logo{
+      float: left;
+      height: 62px;
+      margin: 0;
+      padding: 0;
+      /*height: 100%;*/
+    }
+    .navbar .logo img{
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar .nav-links{
+      width: 60%;
+      padding: 18px 5px 18px 0px;
+      }
+    .navbar .nav-links li{
+      margin-left: 3.2%;
+      font-size: 1rem;
+    }
+    .navbar .nav-links li a{
+      transition: ease 0.3s;
+    }
+    .navbar .nav-links li a:hover{
+      color:#cfe622;
+      transition: ease 0.3s;
+      transform: scale(1.3,1.3);
+    }
+    .navbar .nav-links li a::after{
+      background-color: white;
+    }
+/*End Navbar*//*################################################*/
+
+/*Start header*/
+    .header {
+      background: url('../images/header.jpg') no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      min-height: 500px;
+      position: relative;
+      color: white;
+
+    }
+    .header h1 {
+      padding-top: 40px;
+    }
+    .header .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 500px;
+      background: url('../images/hostel/garden.jpg') no-repeat center center;
+      background-size: cover; /*Fixes Size with Multiple Dimensions*/
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
+    header .card-overlay{
+      float: left;
+      background:rgba(58, 99, 115, 0.5); /*light-opacity chills color */
+    }
+    p {
+      font-size: 16px;
+      color: #444;
+      line-height: 150%
+    }
+
+    .header .overlay h1{
+    font-size: 50px;
+    margin-top: 100px;
+    }
+
+    .header .overlay .plan{
+      color: white;
+      border: 2px solid #FFF;
+      font-size: 24px;
+      width: 48%;
+      margin-left: 1%;
+      margin-right: 1%;
+      padding: 20px;
+      float: left;
+    }
+    .header .overlay .order{
+      color: white;
+      border: 2px solid #FFF;
+      font-size: 24px;
+      /*width: 48%;*/
+      margin: 2% 1% 0 1%;
+      margin-left: 1%;
+      margin-right: 1%;
+      padding: 20px;
+    }
+
+      /*Mobile Responsive*/
+
+              @media (max-width: 459px) {
+                    h1 {font-size: 30px !important;
+                        margin-top: 80px !important;}
+
+                    .header .overlay .plan {
+                      float: none;
+                      margin:0 auto 5px;
+                      font-size: 18px;
+                      width: 70%;}
+
+                    .header .overlay .order {
+                      font-size: 18px;
+                      margin: auto;
+                      width: 70%;}
+              }
+
+              @media (min-width: 460px) and (max-width: 767px) {
+                    h1 {font-size: 35px !important;
+                        margin-top: 90px !important;
+              }
+                    .header .overlay .plan {
+                        float: none;
+                        margin:0 auto 10px;
+                        font-size: 20px;
+                        width: 70%;
+                      }
+                    .header .overlay .order {
+                        font-size: 18px;
+                        margin: auto;
+                        width: 70%;}
+              }
+
+              @media (min-width: 768px){
+                  h1 {font-size: 50px !important;
+                }
+                  .header .overlay .plan {
+                  float: left;
+                  font-size: 25px;
+                  }
+              }
+/*End Header*//*################################################*/
+
+/*Start Information*/
+
+    .information{
+    background-color: #ddd;
+    padding: 100px;}
+
+    .info-tabs li{
+      padding: 10px 30px 10px 30px;
+      font-size: 25px;
+      background-color: #F1F1F1;
+      margin: 10 0;
+      margin-bottom: 0 !important;
+      cursor: pointer;
+    }
+
+    .info-tabs li.selected{
+      background-color: #FAFAFA;
+    }
+    .information .info-content p{
+      border-bottom: 30px;
+      margin-top: 0;
+      padding: 30px 20px;
+      font-size:20px;
+    }
+    .information .info-content{
+      background-color: #fafafa;
+      margin-top: 0;
+      line-height: 2;
+    }
+/*End Information*/
+
+/*Start Offers Section*/
+    .offers-card {
+      background: #fafafa;
+      width: 100%;
+      padding: 20px;
+      border-radius: 3px;
+      box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.2);
+    }
+    .offers-card .submit{
+    color: black;
+    }
+/*End Offers Section*//*################################################*/
+
+/*Start Cafe Card Section*/
+    .cafe-card{
+      min-height: 400px;
+      background: url('../images/food/teaCup.jpg') no-repeat center center;
+      background-size: cover; /*Fixes Size with Multiple Dimensions*/
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      color: white;
+    }
+    .card-overlay{
+      background: rgba(60, 94, 95, 0.45); /*light-opacity chills color */
+      /*min-height: 400px;*/
+      height: 100%;
+      top: 0;
+      width: 100%;
+    }
+      .cafe-card .card-overlay{
+        min-height: 400px;
+        width: 100%;
+      }
+      .cafe-card .menu-p{
+        color: white;
+      }
+/*End Cafe Card Section*//*################################################*/
+
+/*Start Lanmarks Gallery*/
+      .gallery {
+      /*width: 640px;*/
+      margin: 0 auto;
+      padding: 5px;
+      /*height: 500px;*/
+      /*background: #fff;*/
+      /*box-shadow: 0 1px 2px rgba(0,0,0,.3);*/
+      }
+
+      .gallery > div {
+      position: relative;
+      float: left;
+      padding: 10px;
+      opacity: .7;
+      display: block;
+      width: 25%;
+      transition: .2s transform;
+      transform: translateZ(0); /* hack */
+      }
+
+      .gallery h3 {
+        padding: 5px;
+      }
+      .gallery p {
+        color: white;
+        font-size: 14px;
+        padding: 5px;
+      }
+
+            /*Gallery Responsive Media Queries*/
+          @media(max-width:1000px){
+            .gallery > div {
+            width: 50%;
+            }
+            .gal-container{
+              width: 100%;
+              padding-left: 70px;
+              padding-right: 40px;
+            }
+          }
+          @media(max-width: 787px){
+            .gallery > div {
+            width: 100%;
+            }
+          }
+          @media(max-width: 580px){
+            .gallery > div {
+            width: 100%;
+            }
+          }
+              /*Gallery Images*/
+                .gallery > .div1 {background: url('../images/Signal Mountain.jpg') center no-repeat; width: 300px; height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div2 {background: url('../images/Fort Adelaide (Citadel).jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div3 {background: url('../images/Vieux Grand Port.jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div4 {background: url('../images/Le Morne Brabant.jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div5 {background: url('../images/Balaclava Ruins.jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div6 {background: url('../images/Chamarel Coloured Earth Overview.jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div7 {background: url('../images/Grand Baie.jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+                .gallery > .div8 {background: url('../images/Trou aux Cerfs.jpg') center no-repeat;width: 300px;height: 300px;
+                -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+
+      .gallery > div:hover {
+      z-index: 1;
+      transform: scale(1.7,1.7);
+      transition: .3s transform;
+      opacity: 1;
+
+      }
+      .cf:before, .cf:after {
+      display: table;
+      content: "";
+      line-height: 0;
+      }
+      .cf:after {
+      clear: both;
+      }
+/*End Landmarks Gallery*/ /*################################################*/
+
+/*Start Footer*/
+    footer{
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+      background: url('../images/para.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: #fafafa;
+    }
+    footer .card-overlay{
+      background: rgba(60, 94, 95, 0.6); /*light-opacity chills color */
+    }
+    footer .foot-contact textarea, footer .foot-contact input{
+      border-radius: 0;
+    }
+    footer .foot-contact h3
+   {
+        padding: 0;
+    }
+
+    .quick{
+      padding-bottom: 30px;
+    }
+/*End Footer*/
+/*--------------------------------------------- End HOME ------------------------------------------ */
+
+/*--------------------------------------------- START FACILITIES ------------------------------------------ */
+/*Start facilities*/
+      .facilities {
+        min-height: 380px;
+        background-color: #fff; /*white*/
+        padding-top: 40px;
+      }
+      .facilities > h2 {
+        padding-bottom: 30px;
+        font-size: 1.8em;
+      }
+      .facilities .fac-images {
+        padding-bottom: 50px;
+      }
+      .facilities .fac-div {
+        margin-left: 5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        opacity: 0.8;
+        transition: .2s transform;
+
+      }
+      .facilities .fac-div:hover {
+        transform: scale(1.1,1.1);
+        transition: .3s transform;
+        opacity: 1;
+      }
+/*--------------------------------------------- End Facilities ------------------------------------------ */
+/*--------------------------------------------- Start Cafe page ------------------------------------------ */
+/*Header Edits*/
+.cafe-header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: url('../images/food/teaCup.jpg') no-repeat center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  color:#fafafa; /*light grey*/
+}
+.header-p{
+  font-size:1.5rem;
+  color: #fdfdfd;
+}
+
+/*Start Menu Tabs*/
+      .menu-tabs{
+        min-height: 400px;
+      }
+      .menu-tabs h2 {
+        padding-bottom:10px;
+      }
+      .menu-p{
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+        /*color: white;*/
+      }
+      .menu-tab{
+        max-width: 300px;
+        opacity: 0.7;
+        padding: 10px;
+        transition: .2s transform;
+        background-color: #fafafa;
+      }
+      /*width on small screens*/
+      @media (max-width: 700px) {
+        .menu-tab{
+          max-width: 90%;
+          padding: 50px;
+        }
+        .menu-tab:hover{
+          transform: scale(1.1,1.1) !important;
+          opacity: 1;
+          transition: 0.6s;
+        }
+      }
+
+      .menu-tab:hover{
+        transform: scale(1.5,1.5);
+        opacity: 1;
+        transition: 0.6s;
+        z-index: 9999;
+      }
+      .menu-tab img{
+        position: relative;
+      }
+      .menu-tab h3{
+        position: relative;
+        z-index: 1;
+        top:20px;
+      }
+
+      .menu .menu-list{
+        margin: 20px;
+      }
+
+  /*Cafe-gallery*/
+  .caf-banner{
+    max-height: 200px;
+    overflow: hidden;
+  }
+/*End of Menu Tabs*/
+/*--------------------------------------------- End  Cafe page ------------------------------------------ */
+/*--------------------------------------------- Start gettingHere page ------------------------------------------ */
+.here-header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: url('../images/gethere.jpg') no-repeat center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  color:#fafafa; /*light grey*/
+}
+.header-p{
+  font-size:1.3rem;
+  color: #fdfdfd;
+}
+
+    .map-sec{
+      background: #cfe622;
+      padding: 40px;
+      /*height: 500px;*/
+      }
+      .map-sec h2{
+        padding-bottom:30px;
+        }
+      .m {
+        width: 44%;
+      }
+          @media (max-width: 1200 px) {
+            .m {
+              width: 100%;
+            }
+          }
+      .map-p{
+        padding-left: 20px;
+        color: black !important;
+        font-size: 1.1rem !important;
+      }
+
+
+/*--------------------------------------------- End gettingHere page ------------------------------------------ */
+/*--------------------------------------------- Start contactUs page ------------------------------------------ */
+    .contact-header{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1700px !important;
+      background: url('../images/mau.jpg') no-repeat center center !important;
+      background-size: cover !important;
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      color:#fafafa; /*light grey*/
+    }
+
+/*Customize Inputs*/
+.contact-us input,.contact-us textarea{
+  border-radius: 0;
+}
+/*Customize Submit Buttons*/
+.submit{
+  margin-top: 10px;
+  border-radius: 0;
+  background-color: transparent;
+  border: 2px solid;
+  border-color:#cfe622;
+  transition: ease 0.2s;
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+}
+.submit:hover{
+  border-radius: 0;
+  background-color: white;
+  border: 2px solid;
+  border-color:#cfe622;
+  color: white;
+  background-color: #cfe622;
+  transition: ease 0.2s;-
+}
+
+.check-boxx{
+  padding-top: 20px;
+}
+.check-txt{
+  padding-left: 20px;
+  font-size: 1.05rem;
+}
+.check-box{
+  display: block;
+  float:left;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+.check-container:hover input ~ .check-box {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .check-box {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.check-box:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .check-box:after {
+  display: block;
+}
+.rules{
+  background: rgba(0, 0, 0, 0.71);
+  width: 100%;
+  padding: 40px;
+  margin-top: 100px;
+}
+.rules h2 {
+  font-size: 1.2rem;
+}
+.rules-list{
+  line-height: 30px;
+}
+/*--------------------------------------------- End contactUs page ------------------------------------------ */
+
+
+/*--------------------------------------------- Start myFramework page ------------------------------------------ */
+/*Quick Code that helps me customize some basic functionalities used a lot*/
+/*key colors*/
+.b{
+  color: #cfe622;
+}
+.s{
+  color: #cfe622;
+}
+/*Key functions*/
+.float-left{
+  float:left;
+}
+
+.float-right{
+  float: right;
+}
+/*This class clears float*/
+.clearfix{
+  clear: both;
+}
+/*this for hidding elements on particular screens*/
+.vs-ss,
+.vs-ms,
+.vs-ls,
+.vs-xls {
+  display: none;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 5px 30px;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.clear-list{ /*clears list style, paddings and margins*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clear-link { /*clears link styling*/
+  text-decoration: none; /* no underline */
+  color: inherit;
+  /*text-decoration-color: none;*/
+}
+
+.font-kids{
+  font-family: 'Caveat', cursive !important;
+  font-weight: bolder !important;
+  color:#0a3f06 !important;
+
+}
+.btn {
+  background: grey;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btn:hover, .btn:focus {
+  opacity: 0.8;
+  outline: none
+}
+.txtinput {
+  display: block;
+  border: 1px #999 solid
+}
+.txtinput:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+.h1 {
+  font-size: 2em;
+}
+.classic-list{
+  list-style: none;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+.inline {
+  display: inline-block;
+}
+
+/*Clearfix code borowed from css-tricks https://css-tricks.com/snippets/css/clear-fix/*/
+      .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+      }
+      .clearfix { display: inline-block; }
+      /* start commented backslash hack \*/
+      * html .clearfix { height: 1%; }
+      .clearfix { display: block; }
+/*end found on css-tricks https://css-tricks.com/snippets/css/clear-fix/*/
+
+
+  /*my 12 based GRID SYSTEM*/
+  /*inspired from 3WSchools*/
+  .row {
+    width: 100%;
+    display: inline-block;
+  }
+  .row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+
+
+  .col-1 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 8.333333333%;
+  }
+  .col-2 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 16.666666667%;
+  }
+  .col-3 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 25%;
+  }
+  .col-4 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 33.333333333333%;
+  }
+  .col-5 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 41.6666666666666%;
+  }
+  .col-6 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 50%;
+  }
+  .col-7 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 58.3333333333333%;
+  }
+  .col-8 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 66.6666666666666%;
+  }
+  .col-9 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 75%;
+  }
+  .col-10 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 83.3333333333333%;
+  }
+  .col-11 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 91.6666666666666%
+  }
+  .col-12 {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 100%;
+  }
+
+/*end my 12 based grid system*/
+.txtinput {
+  display: block;
+  border: 1px #999 solid;
+  padding: 5px 10px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 5px;
+}
+
+
+
+/*Tablet devices*/
+@media(min-width:768px){
+  .container {
+    width: 90%;
+  }
+}
+
+/*Large Screens*/
+@media(min-width:1201px){
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 580px) {
+  .row > * {
+    width: 100%;
+  }
+}
+
+/*small screens*/
+@media(max-width:460px){
+  .container {
+    width: 95%;
+  }
+}
+
+/*End My Framework*/
+
+
+/*Fast Access Comments*/
+/*Fonts*/
+/*font-family: 'Permanent Marker', cursive;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Caveat', cursive;*/
+/****************************************************/
